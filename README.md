@@ -5,6 +5,5 @@ Repositório contendo a aplicação web de visualização dos dados gerados pela
 
 
 Passo-a-Passo para a visualização da interface localmente:
-1º) Acesse o diretório aonde foi clonado o repositório
-2º) Utilize o comando: 'streamlit run XXXX', aonde XXXX se atribui ao arquivo .py
-3º) Geralmente é utlizado a porta 8501
+1º) Acesse o diretório aonde foi clonado o repositório.
+2º) Utilize o comando: 'streamlit run XXXX', aonde XXXX se atribui ao arquivo .py a ser visualizado.
