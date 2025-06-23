@@ -118,18 +118,19 @@ tab1,tab2,tab3 = st.tabs(['Cenário 1','-','-'])
 with tab1:
     with st.container():
         st.title("Informações relevantes")
-        col1,col2,col3,col4,col5 = st.columns(5, gap='small')
+        col1,col2 = st.columns(2, gap='small')
         with col1:
             col1.metric('Média Pot Bar 3(MW):','{:.3f}'.format(df1.loc[:,'Grid-0.0-Bus 3-p_mw'].mean()))
         with col2:
             col2.metric('Média Tensao Bar 3(p.u.):','{:.3f}'.format(df1.loc[:,'Grid-0.0-Bus 3-vm_pu'].mean()))
+    with st.container():
+        col3,col4,col5 = st.columns(3,gap='small')
         with col3:
             col3.metric('Média da Geração(MW):','{:.3f}'.format(df1.loc[:,'PV-0.PV_0-P_gen'].mean()))
         with col4:
             col4.metric('Média Controlador:','{:.3f}'.format(df1.loc[:,'PV-0.PV_0-mod'].mean()))  
         with col5:
             col5.metric('Média da Linha (%):','{:.3f}'.format(df1.loc[:,'Grid-0.0-Line-loading_percent'].mean()))
-
     with st.container():
                     
         df1["date"] = pd.to_datetime(df1["date"], format='mixed')
