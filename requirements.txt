@@ -2,7 +2,8 @@ haversine==2.9.0
 plotly==6.0.0
 matplotlib==3.9.3
 seaborn==0.13.2
-pandas==2.2.2
-numpy==1.26.4
+pandas==2.3.2
+numpy==2.1.2
 streamlit==1.41.1
 pillow==11.0.0
+
